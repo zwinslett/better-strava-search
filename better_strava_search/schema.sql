@@ -1,0 +1,15 @@
+CREATE TABLE activities(
+    id INT PRIMARY KEY ,
+    start_date TEXT,
+    elapsed_time INT,
+    type TEXT, 
+    average_speed INT,
+    max_speed INT, 
+    average_cadence INT,
+    average_heartrate INT,
+    max_heartrate INT,
+    suffer_score INT,
+    calories INT,
+    gear_name TEXT,
+    description TEXT,
+    distance INT, name TEXT);
