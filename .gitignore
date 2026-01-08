@@ -1,2 +1,4 @@
 better_strava_search/login.py
 better_strava_search/db.sqlite3
+solr_data/
+venv
