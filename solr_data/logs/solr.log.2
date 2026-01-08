@@ -1,0 +1,434 @@
+2025-11-27 04:09:21.307 INFO  (main) [c: s: r: x: t:] o.e.j.s.Server jetty-10.0.22; built: 2024-06-27T16:03:51.502Z; git: 5c8471e852d377fd726ad9b1692c35ffc5febb09; jvm 17.0.16+8
+2025-11-27 04:09:21.549 WARN  (main) [c: s: r: x: t:] o.e.j.u.DeprecationWarning Using @Deprecated Class org.eclipse.jetty.servlet.listener.ELContextCleaner
+2025-11-27 04:09:21.572 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2025-11-27 04:09:21.581 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider  ___      _       Welcome to Apache Solr™ version 9.9.0
+2025-11-27 04:09:21.581 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider / __| ___| |_ _   Starting in standalone mode on port 8983
+2025-11-27 04:09:21.581 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider \__ \/ _ \ | '_|  Install dir: /opt/solr-9.9.0
+2025-11-27 04:09:21.581 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider |___/\___/_|_|    Start time: 2025-11-27T04:09:21.581305713Z
+2025-11-27 04:09:21.584 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Solr started with "-XX:+CrashOnOutOfMemoryError" that will crash on any OutOfMemoryError exception. The cause of the OOME will be logged in the crash file at the following path: /var/solr/logs/jvm_crash_12.log
+2025-11-27 04:09:21.605 INFO  (main) [c: s: r: x: t:] o.a.s.s.CoreContainerProvider Solr Home: /var/solr/data (source: system property: solr.solr.home)
+2025-11-27 04:09:21.621 INFO  (main) [c: s: r: x: t:] o.a.s.c.SolrXmlConfig solr.xml not found in SOLR_HOME, using built-in default
+2025-11-27 04:09:21.622 INFO  (main) [c: s: r: x: t:] o.a.s.c.SolrXmlConfig Loading solr.xml from /opt/solr-9.9.0/server/solr/solr.xml
+2025-11-27 04:09:21.660 INFO  (main) [c: s: r: x: t:] o.a.s.c.SolrResourceLoader Added 1 libs to classloader, from paths: [/opt/solr-9.9.0/lib]
+2025-11-27 04:09:22.171 INFO  (main) [c: s: r: x: t:] o.a.s.u.t.SimplePropagator Always-on trace id generation enabled.
+2025-11-27 04:09:22.373 WARN  (main) [c: s: r: x: t:] o.a.s.u.StartupLoggingUtils Jetty request logging enabled. Will retain logs for last 3 days. See chapter "Configuring Logging" in reference guide for how to configure.
+2025-11-27 04:09:22.374 WARN  (main) [c: s: r: x: t:] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2025-11-27 04:09:22.518 INFO  (main) [c: s: r: x: t:] o.a.s.c.CorePropertiesLocator Found 1 core definitions underneath /var/solr/data
+2025-11-27 04:09:22.518 INFO  (main) [c: s: r: x: t:] o.a.s.c.CorePropertiesLocator Cores are: [mycore]
+2025-11-27 04:09:22.554 INFO  (coreLoadExecutor-13-thread-1) [c: s: r: x:mycore t:] o.a.s.c.SolrConfig Using Lucene MatchVersion: 9.12.0
+2025-11-27 04:09:22.645 INFO  (coreLoadExecutor-13-thread-1) [c: s: r: x:mycore t:] o.a.s.s.IndexSchema Schema name=default-config
+2025-11-27 04:09:22.763 WARN  (main) [c: s: r: x: t:] o.g.j.m.i.MessagingBinders A class jakarta.activation.DataSource for a default provider MessageBodyWriter<jakarta.activation.DataSource> was not found. The provider is not available.
+2025-11-27 04:09:22.971 INFO  (main) [c: s: r: x: t:] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2025-11-27 04:09:22.981 INFO  (coreLoadExecutor-13-thread-1) [c: s: r: x:mycore t:] o.a.s.s.IndexSchema Loaded schema default-config/1.7 with uniqueid field id
+2025-11-27 04:09:22.981 INFO  (coreLoadExecutor-13-thread-1) [c: s: r: x:mycore t:] o.a.s.c.CoreContainer Creating SolrCore 'mycore' using configuration from instancedir /var/solr/data/mycore, trusted=true
+2025-11-27 04:09:23.017 INFO  (coreLoadExecutor-13-thread-1) [c: s: r: x:mycore t:] o.a.s.c.SolrCore Opening new SolrCore at [/var/solr/data/mycore], dataDir=[/var/solr/data/mycore/data/]
+2025-11-27 04:09:23.094 INFO  (main) [c: s: r: x: t:] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@7689ddef{solr-jetty-context.xml,/solr,file:///opt/solr-9.9.0/server/solr-webapp/webapp/,AVAILABLE}{/opt/solr-9.9.0/server/solr-webapp/webapp}
+2025-11-27 04:09:23.101 INFO  (main) [c: s: r: x: t:] o.e.j.s.RequestLogWriter Opened /var/solr/logs/2025_11_27.request.log
+2025-11-27 04:09:23.105 INFO  (main) [c: s: r: x: t:] o.e.j.s.AbstractConnector Started ServerConnector@40499e4f{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2025-11-27 04:09:23.105 INFO  (main) [c: s: r: x: t:] o.e.j.s.Server Started Server@4c51bb7{STARTING}[10.0.22,sto=0] @3951ms
+2025-11-27 04:09:23.450 INFO  (coreLoadExecutor-13-thread-1) [c: s: r: x:mycore t:] o.a.s.j.SolrRequestAuthorizer Creating a new SolrRequestAuthorizer
+2025-11-27 04:09:23.465 INFO  (coreLoadExecutor-13-thread-1) [c: s: r: x:mycore t:] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2025-11-27 04:09:23.472 INFO  (coreLoadExecutor-13-thread-1) [c: s: r: x:mycore t:] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10
+2025-11-27 04:09:23.472 INFO  (coreLoadExecutor-13-thread-1) [c: s: r: x:mycore t:] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2025-11-27 04:09:23.473 INFO  (coreLoadExecutor-13-thread-1) [c: s: r: x:mycore t:] o.a.s.u.CommitTracker Soft AutoCommit: if uncommitted for 3000ms; 
+2025-11-27 04:09:23.533 INFO  (coreLoadExecutor-13-thread-1) [c: s: r: x:mycore t:] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/solr/data/mycore/conf
+2025-11-27 04:09:23.542 INFO  (coreLoadExecutor-13-thread-1) [c: s: r: x:mycore t:] o.a.s.s.DirectSolrSpellChecker init: {accuracy=0.5, maxQueryFrequency=0.01, name=default, field=_text_, classname=solr.DirectSolrSpellChecker, distanceMeasure=internal, maxEdits=2, minPrefix=1, maxInspections=5, minQueryLength=4}
+2025-11-27 04:09:23.546 INFO  (coreLoadExecutor-13-thread-1) [c: s: r: x:mycore t:] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2025-11-27 04:09:23.547 INFO  (searcherExecutor-15-thread-1-processing-mycore) [c: s: r: x:mycore t:] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2025-11-27 04:09:23.547 INFO  (searcherExecutor-15-thread-1-processing-mycore) [c: s: r: x:mycore t:] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2025-11-27 04:09:23.551 INFO  (searcherExecutor-15-thread-1-processing-mycore) [c: s: r: x:mycore t:] o.a.s.c.SolrCore Registered new searcher autowarm time: 0 ms
+2025-11-27 04:09:31.313 INFO  (qtp6422064-19-null-2) [c: s: r: x: t:null-2] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1764216571237} status=0 QTime=15
+2025-11-27 04:09:31.353 INFO  (qtp6422064-18-null-4) [c: s: r: x: t:null-4] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=53
+2025-11-27 04:09:31.353 INFO  (qtp6422064-27-null-3) [c: s: r: x: t:null-3] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=54
+2025-11-27 04:09:40.901 INFO  (qtp6422064-18-null-5) [c: s: r: x: t:null-5] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1764216571237} status=0 QTime=3
+2025-11-27 04:09:40.930 INFO  (qtp6422064-26-null-6) [c: s: r: x: t:null-6] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=36
+2025-11-27 04:09:40.940 INFO  (qtp6422064-24-null-7) [c: s: r: x: t:null-7] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1764216571237} status=0 QTime=46
+2025-11-27 04:09:40.966 INFO  (qtp6422064-20-null-10) [c: s: r: x: t:null-10] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1764216571237} status=0 QTime=0
+2025-11-27 04:09:40.971 INFO  (qtp6422064-19-null-9) [c: s: r: x: t:null-9] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1764216571237} status=0 QTime=4
+2025-11-27 04:09:40.975 INFO  (qtp6422064-27-null-8) [c: s: r: x: t:null-8] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=9
+2025-11-27 04:10:00.972 INFO  (qtp6422064-24-null-11) [c: s: r: x:activities t:null-11] o.a.s.h.a.CoreAdminOperation core create command schema=schema.xml&dataDir=data&name=activities&action=CREATE&config=solrconfig.xml&instanceDir=activities&wt=json&_=1764216571237
+2025-11-27 04:10:00.995 ERROR (qtp6422064-24-null-11) [c: s: r: x: t:null-11] o.a.s.h.RequestHandlerBase Client exception => org.apache.solr.common.SolrException: Error CREATEing SolrCore 'activities': Unable to create core [activities] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/var/solr/data/activities'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1671)
+org.apache.solr.common.SolrException: Error CREATEing SolrCore 'activities': Unable to create core [activities] Caused by: Can't find resource 'solrconfig.xml' in classpath or '/var/solr/data/activities'
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1671) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:118) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:408) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:378) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:235) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:231) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:941) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:895) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:556) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:241) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilterRetry$0(SolrDispatchFilter.java:198) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:227) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:197) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilterRetry(SolrDispatchFilter.java:192) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:181) ~[?:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:97) ~[jetty-servlet-api-4.0.6.jar:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:210) ~[jetty-servlet-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1635) ~[jetty-servlet-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:527) ~[jetty-servlet-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:131) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:598) ~[jetty-security-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:223) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1384) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484) ~[jetty-servlet-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1306) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:149) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:228) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:141) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:301) ~[jetty-rewrite-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:822) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.Server.handle(Server.java:563) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314) ~[jetty-io-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100) ~[jetty-io-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53) ~[jetty-io-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.run(AdaptiveExecutionStrategy.java:199) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149) ~[jetty-util-10.0.22.jar:10.0.22]
+	at java.base/java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: org.apache.solr.common.SolrException: Unable to create core [activities]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1798) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1629) ~[?:?]
+	... 56 more
+Caused by: org.apache.solr.common.SolrException: Could not load conf for core activities: Error loading solr config from /var/solr/data/activities/conf/solrconfig.xml
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:291) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1753) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1629) ~[?:?]
+	... 56 more
+Caused by: org.apache.solr.common.SolrException: Error loading solr config from /var/solr/data/activities/conf/solrconfig.xml
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:165) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:322) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:275) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1753) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1629) ~[?:?]
+	... 56 more
+Caused by: org.apache.solr.common.SolrException: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/var/solr/data/activities'
+	at org.apache.solr.core.SolrConfig.readXml(SolrConfig.java:421) ~[?:?]
+	at org.apache.solr.core.SolrConfig.lambda$new$1(SolrConfig.java:227) ~[?:?]
+	at org.apache.solr.schema.IndexSchemaFactory.getFromCache(IndexSchemaFactory.java:191) ~[?:?]
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:220) ~[?:?]
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:157) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:322) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:275) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1753) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1629) ~[?:?]
+	... 56 more
+Caused by: org.apache.solr.core.SolrResourceNotFoundException: Can't find resource 'solrconfig.xml' in classpath or '/var/solr/data/activities'
+	at org.apache.solr.core.SolrResourceLoader.openResource(SolrResourceLoader.java:386) ~[?:?]
+	at org.apache.solr.core.SolrConfig.readXml(SolrConfig.java:414) ~[?:?]
+	at org.apache.solr.core.SolrConfig.lambda$new$1(SolrConfig.java:227) ~[?:?]
+	at org.apache.solr.schema.IndexSchemaFactory.getFromCache(IndexSchemaFactory.java:191) ~[?:?]
+	at org.apache.solr.core.SolrConfig.<init>(SolrConfig.java:220) ~[?:?]
+	at org.apache.solr.core.SolrConfig.readFromResourceLoader(SolrConfig.java:157) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.createSolrConfig(ConfigSetService.java:322) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:275) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1753) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1629) ~[?:?]
+	... 56 more
+2025-11-27 04:10:00.995 INFO  (qtp6422064-24-null-11) [c: s: r: x: t:null-11] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={schema=schema.xml&dataDir=data&name=activities&action=CREATE&config=solrconfig.xml&instanceDir=activities&wt=json&_=1764216571237} status=400 QTime=25
+2025-11-27 04:10:13.815 INFO  (qtp6422064-19-null-16) [c: s: r: x: t:null-16] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1764216571237} status=0 QTime=3
+2025-11-27 04:10:13.834 INFO  (qtp6422064-25-null-14) [c: s: r: x: t:null-14] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=23
+2025-11-27 04:10:13.843 INFO  (qtp6422064-24-null-15) [c: s: r: x:mycore t:null-15] o.a.s.c.S.Request webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1764216613776} status=0 QTime=32
+2025-11-27 04:10:13.843 INFO  (qtp6422064-47-null-17) [c: s: r: x:mycore t:null-17] o.a.s.c.S.Request webapp=/solr path=/admin/ping params={action=status&wt=json&_=1764216571237&ts=1764216571237} status=503 QTime=30
+2025-11-27 04:10:13.850 INFO  (qtp6422064-27-null-12) [c: s: r: x:mycore t:null-12] o.a.s.c.S.Request webapp=/solr path=/admin/system params={wt=json&_=1764216613776} status=0 QTime=39
+2025-11-27 04:10:13.852 INFO  (qtp6422064-26-null-13) [c: s: r: x:mycore t:null-13] o.a.s.c.S.Request webapp=/solr path=/replication params={wt=json&command=details&_=1764216613777} status=0 QTime=41
+2025-11-27 04:10:14.924 INFO  (qtp6422064-19-null-19) [c: s: r: x: t:null-19] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1764216571237} status=0 QTime=0
+2025-11-27 04:10:14.929 INFO  (qtp6422064-26-null-18) [c: s: r: x:mycore t:null-18] o.a.s.c.S.Request webapp=/solr path=/admin/file params={wt=json&_=1764216614918} status=0 QTime=5
+2025-11-27 04:10:14.930 INFO  (qtp6422064-18-null-20) [c: s: r: x: t:null-20] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=5
+2025-11-27 04:10:14.963 INFO  (qtp6422064-20-null-21) [c: s: r: x:mycore t:null-21] o.a.s.c.S.Request webapp=/solr path=/admin/file params={file=lang&wt=json&_=1764216614918} status=0 QTime=10
+2025-11-27 04:10:53.881 INFO  (qtp6422064-18-null-24) [c: s: r: x: t:null-24] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1764216571237} status=0 QTime=4
+2025-11-27 04:10:53.901 INFO  (qtp6422064-19-null-23) [c: s: r: x: t:null-23] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=23
+2025-11-27 04:10:53.901 INFO  (qtp6422064-26-null-22) [c: s: r: x: t:null-22] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=23
+2025-11-27 04:12:51.911 INFO  (qtp6422064-27-null-25) [c: s: r: x: t:null-25] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1764216571237} status=0 QTime=7
+2025-11-27 04:12:51.922 INFO  (qtp6422064-18-null-27) [c: s: r: x: t:null-27] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1764216571237} status=0 QTime=9
+2025-11-27 04:12:51.927 INFO  (qtp6422064-21-null-26) [c: s: r: x: t:null-26] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=24
+2025-11-27 04:12:51.944 INFO  (qtp6422064-20-null-30) [c: s: r: x: t:null-30] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1764216571237} status=0 QTime=0
+2025-11-27 04:12:51.949 INFO  (qtp6422064-24-null-29) [c: s: r: x: t:null-29] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1764216571237} status=0 QTime=5
+2025-11-27 04:12:51.950 INFO  (qtp6422064-48-null-28) [c: s: r: x: t:null-28] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=6
+2025-11-27 04:20:44.146 INFO  (qtp6422064-49-null-31) [c: s: r: x:activities t:null-31] o.a.s.h.a.CoreAdminOperation core create command name=activities&action=CREATE&configSet=data_driven_schema_configs
+2025-11-27 04:20:44.164 ERROR (qtp6422064-49-null-31) [c: s: r: x: t:null-31] o.a.s.h.RequestHandlerBase Client exception => org.apache.solr.common.SolrException: Error CREATEing SolrCore 'activities': Unable to create core [activities] Caused by: Could not load configuration from directory /var/solr/data/configsets/data_driven_schema_configs
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1671)
+org.apache.solr.common.SolrException: Error CREATEing SolrCore 'activities': Unable to create core [activities] Caused by: Could not load configuration from directory /var/solr/data/configsets/data_driven_schema_configs
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1671) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:118) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:408) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:378) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:235) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:231) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:941) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:895) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:556) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:241) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilterRetry$0(SolrDispatchFilter.java:198) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:227) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:197) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilterRetry(SolrDispatchFilter.java:192) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:181) ~[?:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:97) ~[jetty-servlet-api-4.0.6.jar:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:210) ~[jetty-servlet-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1635) ~[jetty-servlet-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:527) ~[jetty-servlet-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:131) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:598) ~[jetty-security-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:223) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1384) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484) ~[jetty-servlet-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1306) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:149) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:228) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:141) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:301) ~[jetty-rewrite-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:822) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.Server.handle(Server.java:563) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314) ~[jetty-io-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100) ~[jetty-io-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53) ~[jetty-io-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149) ~[jetty-util-10.0.22.jar:10.0.22]
+	at java.base/java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: org.apache.solr.common.SolrException: Unable to create core [activities]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1798) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1629) ~[?:?]
+	... 51 more
+Caused by: org.apache.solr.common.SolrException: Could not load configuration from directory /var/solr/data/configsets/data_driven_schema_configs
+	at org.apache.solr.core.FileSystemConfigSetService.locateInstanceDir(FileSystemConfigSetService.java:321) ~[?:?]
+	at org.apache.solr.core.FileSystemConfigSetService.createCoreResourceLoader(FileSystemConfigSetService.java:73) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:268) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1753) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1629) ~[?:?]
+	... 51 more
+2025-11-27 04:20:44.165 INFO  (qtp6422064-49-null-31) [c: s: r: x: t:null-31] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=activities&action=CREATE&configSet=data_driven_schema_configs} status=400 QTime=22
+2025-11-27 04:21:56.612 INFO  (qtp6422064-48-null-32) [c: s: r: x:activities t:null-32] o.a.s.h.a.CoreAdminOperation core create command name=activities&action=CREATE&configSet=basic_configs
+2025-11-27 04:21:56.622 ERROR (qtp6422064-48-null-32) [c: s: r: x: t:null-32] o.a.s.h.RequestHandlerBase Client exception => org.apache.solr.common.SolrException: Error CREATEing SolrCore 'activities': Unable to create core [activities] Caused by: Could not load configuration from directory /var/solr/data/configsets/basic_configs
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1671)
+org.apache.solr.common.SolrException: Error CREATEing SolrCore 'activities': Unable to create core [activities] Caused by: Could not load configuration from directory /var/solr/data/configsets/basic_configs
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1671) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:118) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:408) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:378) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:235) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:231) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:941) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:895) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:556) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:241) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilterRetry$0(SolrDispatchFilter.java:198) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:227) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:197) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilterRetry(SolrDispatchFilter.java:192) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:181) ~[?:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:97) ~[jetty-servlet-api-4.0.6.jar:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:210) ~[jetty-servlet-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1635) ~[jetty-servlet-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:527) ~[jetty-servlet-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:131) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:598) ~[jetty-security-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:223) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1384) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484) ~[jetty-servlet-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1306) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:149) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:228) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:141) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:301) ~[jetty-rewrite-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:822) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.Server.handle(Server.java:563) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314) ~[jetty-io-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100) ~[jetty-io-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53) ~[jetty-io-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.run(AdaptiveExecutionStrategy.java:199) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149) ~[jetty-util-10.0.22.jar:10.0.22]
+	at java.base/java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: org.apache.solr.common.SolrException: Unable to create core [activities]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1798) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1629) ~[?:?]
+	... 56 more
+Caused by: org.apache.solr.common.SolrException: Could not load configuration from directory /var/solr/data/configsets/basic_configs
+	at org.apache.solr.core.FileSystemConfigSetService.locateInstanceDir(FileSystemConfigSetService.java:321) ~[?:?]
+	at org.apache.solr.core.FileSystemConfigSetService.createCoreResourceLoader(FileSystemConfigSetService.java:73) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:268) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1753) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1629) ~[?:?]
+	... 56 more
+2025-11-27 04:21:56.622 INFO  (qtp6422064-48-null-32) [c: s: r: x: t:null-32] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=activities&action=CREATE&configSet=basic_configs} status=400 QTime=12
+2025-11-27 04:22:11.714 INFO  (qtp6422064-24-null-33) [c: s: r: x: t:null-33] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1764216571237} status=0 QTime=5
+2025-11-27 04:22:11.735 INFO  (qtp6422064-20-null-34) [c: s: r: x: t:null-34] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=27
+2025-11-27 04:22:11.736 INFO  (qtp6422064-48-null-35) [c: s: r: x: t:null-35] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=10
+2025-11-27 04:23:09.984 INFO  (qtp6422064-49-null-36) [c: s: r: x:activities t:null-36] o.a.s.h.a.CoreAdminOperation core create command name=activities&action=CREATE&configSet=_default
+2025-11-27 04:23:09.994 ERROR (qtp6422064-49-null-36) [c: s: r: x: t:null-36] o.a.s.h.RequestHandlerBase Client exception => org.apache.solr.common.SolrException: Error CREATEing SolrCore 'activities': Unable to create core [activities] Caused by: Could not load configuration from directory /var/solr/data/configsets/_default
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1671)
+org.apache.solr.common.SolrException: Error CREATEing SolrCore 'activities': Unable to create core [activities] Caused by: Could not load configuration from directory /var/solr/data/configsets/_default
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1671) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminOperation.lambda$static$0(CoreAdminOperation.java:118) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminOperation.execute(CoreAdminOperation.java:408) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminHandler$CallInfo.call(CoreAdminHandler.java:378) ~[?:?]
+	at org.apache.solr.handler.admin.CoreAdminHandler.handleRequestBody(CoreAdminHandler.java:235) ~[?:?]
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:231) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdmin(HttpSolrCall.java:941) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.handleAdminRequest(HttpSolrCall.java:895) ~[?:?]
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:556) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.dispatch(SolrDispatchFilter.java:241) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.lambda$doFilterRetry$0(SolrDispatchFilter.java:198) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.traceHttpRequestExecution2(ServletUtils.java:227) ~[?:?]
+	at org.apache.solr.servlet.ServletUtils.rateLimitRequest(ServletUtils.java:197) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilterRetry(SolrDispatchFilter.java:192) ~[?:?]
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:181) ~[?:?]
+	at javax.servlet.http.HttpFilter.doFilter(HttpFilter.java:97) ~[jetty-servlet-api-4.0.6.jar:?]
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:210) ~[jetty-servlet-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.servlet.ServletHandler$Chain.doFilter(ServletHandler.java:1635) ~[jetty-servlet-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:527) ~[jetty-servlet-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:131) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:598) ~[jetty-security-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:223) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1580) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:221) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1384) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:176) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:484) ~[jetty-servlet-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1553) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:174) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1306) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:129) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:149) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:228) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:141) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:301) ~[jetty-rewrite-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.gzip.GzipHandler.handle(GzipHandler.java:822) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:122) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.Server.handle(Server.java:563) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.HttpChannel$RequestDispatchable.dispatch(HttpChannel.java:1598) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:753) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:501) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:287) ~[jetty-server-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:314) ~[jetty-io-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:100) ~[jetty-io-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.io.SelectableChannelEndPoint$1.run(SelectableChannelEndPoint.java:53) ~[jetty-io-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.runTask(AdaptiveExecutionStrategy.java:421) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.consumeTask(AdaptiveExecutionStrategy.java:390) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.tryProduce(AdaptiveExecutionStrategy.java:277) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.strategy.AdaptiveExecutionStrategy.run(AdaptiveExecutionStrategy.java:199) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:411) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:969) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.doRunJob(QueuedThreadPool.java:1194) ~[jetty-util-10.0.22.jar:10.0.22]
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:1149) ~[jetty-util-10.0.22.jar:10.0.22]
+	at java.base/java.lang.Thread.run(Unknown Source) [?:?]
+Caused by: org.apache.solr.common.SolrException: Unable to create core [activities]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1798) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1629) ~[?:?]
+	... 56 more
+Caused by: org.apache.solr.common.SolrException: Could not load configuration from directory /var/solr/data/configsets/_default
+	at org.apache.solr.core.FileSystemConfigSetService.locateInstanceDir(FileSystemConfigSetService.java:321) ~[?:?]
+	at org.apache.solr.core.FileSystemConfigSetService.createCoreResourceLoader(FileSystemConfigSetService.java:73) ~[?:?]
+	at org.apache.solr.core.ConfigSetService.loadConfigSet(ConfigSetService.java:268) ~[?:?]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1753) ~[?:?]
+	at org.apache.solr.core.CoreContainer.create(CoreContainer.java:1629) ~[?:?]
+	... 56 more
+2025-11-27 04:23:09.995 INFO  (qtp6422064-49-null-36) [c: s: r: x: t:null-36] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=activities&action=CREATE&configSet=_default} status=400 QTime=14
+2025-11-27 04:25:57.306 INFO  (qtp6422064-21-null-37) [c: s: r: x: t:null-37] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1764216571237} status=0 QTime=2
+2025-11-27 04:25:57.329 INFO  (qtp6422064-20-null-38) [c: s: r: x: t:null-38] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=22
+2025-11-27 04:25:57.352 INFO  (qtp6422064-24-null-39) [c: s: r: x: t:null-39] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1764217557296&since=0} status=0 QTime=38
+2025-11-27 04:26:07.337 INFO  (qtp6422064-18-null-40) [c: s: r: x: t:null-40] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1764217557296&since=0} status=0 QTime=2
+2025-11-27 04:26:17.361 INFO  (qtp6422064-24-null-41) [c: s: r: x: t:null-41] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1764217557296&since=0} status=0 QTime=6
+2025-11-27 04:26:27.363 INFO  (qtp6422064-18-null-42) [c: s: r: x: t:null-42] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1764217557296&since=0} status=0 QTime=5
+2025-11-27 04:26:37.428 INFO  (qtp6422064-24-null-43) [c: s: r: x: t:null-43] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1764217557296&since=0} status=0 QTime=3
+2025-11-27 04:26:47.425 INFO  (qtp6422064-18-null-44) [c: s: r: x: t:null-44] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1764217557296&since=0} status=0 QTime=3
+2025-11-27 04:26:57.451 INFO  (qtp6422064-24-null-45) [c: s: r: x: t:null-45] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1764217557296&since=0} status=0 QTime=6
+2025-11-27 04:27:07.467 INFO  (qtp6422064-18-null-46) [c: s: r: x: t:null-46] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1764217557296&since=0} status=0 QTime=6
+2025-11-27 04:27:17.457 INFO  (qtp6422064-24-null-47) [c: s: r: x: t:null-47] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1764217557296&since=0} status=0 QTime=4
+2025-11-27 04:27:27.477 INFO  (qtp6422064-18-null-48) [c: s: r: x: t:null-48] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1764217557296&since=0} status=0 QTime=6
+2025-11-27 04:27:37.476 INFO  (qtp6422064-24-null-49) [c: s: r: x: t:null-49] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1764217557296&since=0} status=0 QTime=3
+2025-11-27 04:27:47.500 INFO  (qtp6422064-18-null-50) [c: s: r: x: t:null-50] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1764217557296&since=0} status=0 QTime=11
+2025-11-27 04:27:57.508 INFO  (qtp6422064-24-null-51) [c: s: r: x: t:null-51] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1764217557296&since=0} status=0 QTime=4
+2025-11-27 04:28:07.521 INFO  (qtp6422064-21-null-52) [c: s: r: x: t:null-52] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1764217557296&since=0} status=0 QTime=4
+2025-11-27 04:28:17.523 INFO  (qtp6422064-49-null-53) [c: s: r: x: t:null-53] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1764217557296&since=0} status=0 QTime=2
+2025-11-27 04:28:27.548 INFO  (qtp6422064-21-null-54) [c: s: r: x: t:null-54] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1764217557296&since=0} status=0 QTime=9
+2025-11-27 04:28:32.440 INFO  (qtp6422064-49-null-55) [c: s: r: x: t:null-55] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1764216571237} status=0 QTime=1
+2025-11-27 04:28:32.486 INFO  (qtp6422064-26-null-56) [c: s: r: x: t:null-56] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1764216571237} status=0 QTime=13
+2025-11-27 04:28:32.503 INFO  (qtp6422064-21-null-57) [c: s: r: x: t:null-57] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=21
+2025-11-27 04:28:32.512 INFO  (qtp6422064-26-null-60) [c: s: r: x: t:null-60] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1764216571237} status=0 QTime=0
+2025-11-27 04:28:32.517 INFO  (qtp6422064-49-null-59) [c: s: r: x: t:null-59] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1764216571237} status=0 QTime=5
+2025-11-27 04:28:32.521 INFO  (qtp6422064-47-null-58) [c: s: r: x: t:null-58] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=9
+2025-11-27 04:28:37.065 INFO  (qtp6422064-47-null-62) [c: s: r: x: t:null-62] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1764216571237} status=0 QTime=0
+2025-11-27 04:28:37.067 INFO  (qtp6422064-21-null-63) [c: s: r: x: t:null-63] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/properties params={wt=json&_=1764217717060} status=0 QTime=2
+2025-11-27 04:28:37.073 INFO  (qtp6422064-48-null-61) [c: s: r: x: t:null-61] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=8
+2025-11-27 04:28:38.264 INFO  (qtp6422064-48-null-66) [c: s: r: x: t:null-66] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1764216571237} status=0 QTime=0
+2025-11-27 04:28:38.266 INFO  (qtp6422064-26-null-65) [c: s: r: x: t:null-65] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1764217557296&since=0} status=0 QTime=2
+2025-11-27 04:28:38.277 INFO  (qtp6422064-49-null-64) [c: s: r: x: t:null-64] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=13
+2025-11-27 04:28:38.874 INFO  (qtp6422064-26-null-69) [c: s: r: x: t:null-69] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1764216571237} status=0 QTime=1
+2025-11-27 04:28:38.880 INFO  (qtp6422064-21-null-67) [c: s: r: x: t:null-67] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=7
+2025-11-27 04:28:38.880 INFO  (qtp6422064-47-null-68) [c: s: r: x: t:null-68] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=8
+2025-11-27 04:28:46.784 INFO  (qtp6422064-21-null-70) [c: s: r: x: t:null-70] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1764216571237} status=0 QTime=3
+2025-11-27 04:28:46.797 INFO  (qtp6422064-49-null-72) [c: s: r: x: t:null-72] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1764216571237} status=0 QTime=15
+2025-11-27 04:28:46.810 INFO  (qtp6422064-48-null-71) [c: s: r: x: t:null-71] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=27
+2025-11-27 04:28:46.820 INFO  (qtp6422064-47-null-75) [c: s: r: x: t:null-75] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1764216571237} status=0 QTime=0
+2025-11-27 04:28:46.823 INFO  (qtp6422064-26-null-73) [c: s: r: x: t:null-73] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1764216571237} status=0 QTime=3
+2025-11-27 04:28:46.824 INFO  (qtp6422064-48-null-74) [c: s: r: x: t:null-74] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1764216571237} status=0 QTime=4
+2025-11-27 04:29:19.369 INFO  (JettyShutdownThread) [c: s: r: x: t:] o.e.j.s.Server Stopped Server@4c51bb7{STOPPING}[10.0.22,sto=0]
+2025-11-27 04:29:19.383 INFO  (JettyShutdownThread) [c: s: r: x: t:] o.e.j.s.AbstractConnector Stopped ServerConnector@40499e4f{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2025-11-27 04:29:19.421 INFO  (JettyShutdownThread) [c: s: r: x: t:] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1248310508
+2025-11-27 04:29:19.427 INFO  (coreCloseExecutor-21-thread-1) [c: s: r: x:mycore t:] o.a.s.c.SolrCore CLOSING SolrCore org.apache.solr.core.SolrCore@24afb7d2 mycore
+2025-11-27 04:29:19.433 INFO  (coreCloseExecutor-21-thread-1) [c: s: r: x:mycore t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.mycore tag=SolrCore@24afb7d2
+2025-11-27 04:29:19.466 INFO  (coreCloseExecutor-21-thread-1) [c: s: r: x:mycore t:] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2025-11-27 04:29:19.487 INFO  (JettyShutdownThread) [c: s: r: x: t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2025-11-27 04:29:19.500 INFO  (JettyShutdownThread) [c: s: r: x: t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2025-11-27 04:29:19.504 INFO  (JettyShutdownThread) [c: s: r: x: t:] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2025-11-27 04:29:19.529 INFO  (JettyShutdownThread) [c: s: r: x: t:] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@7689ddef{solr-jetty-context.xml,/solr,null,STOPPED}{/opt/solr-9.9.0/server/solr-webapp/webapp}
