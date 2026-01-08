@@ -4,7 +4,7 @@ from .models import Activity
 from .serializers import ActivitySerializer
 import requests
 import json
-from .. import envs
+import envs
 
 
 # Create your views here.
