@@ -3,3 +3,4 @@ better_strava_search/db.sqlite3
 solr_data/
 venv/
 .idea/
+better_strava_search/envs.py

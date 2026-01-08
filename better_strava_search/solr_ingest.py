@@ -1,16 +1,17 @@
 import sqlite3
 import json
 import requests
+import envs as envs
 
 
-def sql_to_solr(db: str) -> None:
+def sql_to_solr(db: str, core: str) -> None:
     connection = sqlite3.connect(db)
     cursor = connection.cursor()
     cursor.execute('SELECT id, start_date, elapsed_time, type, average_speed, max_speed, average_cadence, '
                    'average_heartrate, max_heartrate, suffer_score, calories, gear_name, description, distance, '
                    'name FROM activities')
     rows = cursor.fetchall()
-    solr_url = 'http://localhost:8983/solr/activities/update?commit=true'
+    solr_url = f"{core}/update?commit=true"
     headers = {'Content-Type': 'application/json'}
     solr_docs = []
 
@@ -39,4 +40,4 @@ def sql_to_solr(db: str) -> None:
     connection.close()
 
 
-sql_to_solr('db.sqlite3')
+sql_to_solr(envs.database, envs.solr_core)

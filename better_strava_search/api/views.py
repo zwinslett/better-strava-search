@@ -4,6 +4,7 @@ from .models import Activity
 from .serializers import ActivitySerializer
 import requests
 import json
+from .. import envs
 
 
 # Create your views here.
@@ -14,7 +15,7 @@ class AllActivities(generics.ListAPIView):
 
 class SearchResults(generics.ListAPIView):
     def get_queryset(self):
-        solr_url = 'http://localhost:8983/solr/activities/select?'
+        solr_url = f'{envs.solr_core}/select?'
         query = self.request.GET.get('q', '')
         field = self.request.GET.get('field', '')
         solr_query = f"{field}:{query}"
