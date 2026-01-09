@@ -23,6 +23,7 @@ class SearchResults(generics.ListAPIView):
             'q': solr_query,
             'wt': 'json',
             'rows': 100,
+            'sort': 'start_date_dt asc'
         }
         try:
             response = requests.get(solr_url, params=solr_params, timeout=10)

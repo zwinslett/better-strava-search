@@ -14,8 +14,14 @@ def get_token() -> dict[str, str]:
     }
 
     print('Requesting Token...\n')
-    token_object = requests.post('https://www.strava.com/oauth/token', data=payload, verify=False)
-    access_token = token_object.json()['access_token']
+    try:
+        response = requests.post('https://www.strava.com/oauth/token', data=payload, verify=False)
+        response.raise_for_status()
+        print("Success")
+    except Exception as e:
+        print(f"Token request failed: {e}")
+
+    access_token = response.json()['access_token']
 
     header = {'Authorization': 'Bearer ' + access_token}
     return header
@@ -29,19 +35,25 @@ def get_activities(header: dict[str, str], before: int, after: int, page: int) -
     # create an empty array to store our combined pages of data in
     data = []
     while new_results:
-        # request a page + 200 results
-        get_strava = requests.get('https://www.strava.com/api/v3/activities', headers=header, params={'per_page': 200,
-                                                                                                      'page': f'{page}',
-                                                                                                      'before': before,
-                                                                                                      'after': after}).json()
-        # save the response to new_results to check if its empty or not and close the loop
-        new_results = get_strava
+        try:
+            # request a page + 200 results
+            response = requests.get('https://www.strava.com/api/v3/activities', headers=header, params={'per_page': 200,
+                                                                                                        'page': f'{page}',
+                                                                                                        'before': before,
+                                                                                                        'after': after})
+            response.raise_for_status()
+            # save the response to new_results to check if its empty or not and close the loop
+            activities = response.json()
+            new_results = response
+            print(f'Requested {len(activities)} activities')
+        except Exception as e:
+            print(f'Request failed: {e}')
 
-        if not get_strava:
+        if not activities:
             break
         else:
             # add our responses to the data array
-            data.extend(get_strava)
+            data.extend(activities)
             # Give some feedback
             print(f'You are requesting page {page} of your activities data ...')
             # increment the page
@@ -55,8 +67,13 @@ def sync_strava_activities(activities: list[dict[str, Any]], header: dict[str, s
     cur = conn.cursor()
     for activity in activities:
         if activity['type'] == 'Run':
-            detailed_activity = requests.get(f"https://www.strava.com/api/v3/activities/{activity['id']}",
-                                             headers=header).json()
+            try:
+                response = requests.get(f"https://www.strava.com/api/v3/activities/{activity['id']}",
+                                        headers=header)
+                response.raise_for_status()
+                detailed_activity = response.json()
+            except Exception as e:
+                print(f'Request failed: {e}')
             cur.execute("INSERT OR REPLACE INTO activities(id, start_date, elapsed_time, type, average_speed,"
                         "max_speed, average_cadence, average_heartrate, max_heartrate, suffer_score, calories, "
                         "gear_name, "
@@ -64,12 +81,16 @@ def sync_strava_activities(activities: list[dict[str, Any]], header: dict[str, s
                         "VALUES(?,?, ?, ?, ?, "
                         "?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
                         [activity['id'], detailed_activity['start_date'], detailed_activity['elapsed_time'],
-                         detailed_activity['type'], detailed_activity['average_speed'] * 2.237, detailed_activity['max_speed'] * 2.237,
+                         detailed_activity['type'], detailed_activity['average_speed'] * 2.237,
+                         detailed_activity['max_speed'] * 2.237,
                          detailed_activity['average_cadence'], detailed_activity['average_heartrate'],
-                         detailed_activity['max_heartrate'], detailed_activity['suffer_score'], detailed_activity['calories'], detailed_activity['gear']['name'], detailed_activity['description'], detailed_activity['distance'] / 1609, detailed_activity['name']])
+                         detailed_activity['max_heartrate'], detailed_activity['suffer_score'],
+                         detailed_activity['calories'], detailed_activity['gear']['name'],
+                         detailed_activity['description'], detailed_activity['distance'] / 1609,
+                         detailed_activity['name']])
     conn.commit()
 
 
 token = get_token()
-data = get_activities(token, 1761797242, 1759291642, 1)
+data = get_activities(token, 1767156690, 1756702290, 1)
 sync_strava_activities(data, token)

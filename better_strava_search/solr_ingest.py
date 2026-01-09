@@ -33,10 +33,13 @@ def sql_to_solr(db: str, core: str) -> None:
             'distance_f': row[13],
             'name_t': row[14]
         })
-    post_to_solr = requests.post(solr_url, data=json.dumps(solr_docs), headers=headers)
-    print(solr_docs)
-    print(post_to_solr.status_code)
-    print(post_to_solr.text)
+
+    try:
+        response = requests.post(solr_url, data=json.dumps(solr_docs), headers=headers, timeout=10)
+        response.raise_for_status()
+        print(f"{len(solr_docs)} documents created")
+    except Exception as e:
+        print(f"Failed to post to solr: {e}")
     connection.close()
 
 
