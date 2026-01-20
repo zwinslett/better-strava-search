@@ -1,6 +1,6 @@
 # Better Strava Search (WIP)
 
-This is an attempt to build a better search interface for **running** activites on Strava using
+This is an attempt to build a better search interface for **running** activities on Strava using
 [Apache Solr](https://solr.apache.org/) and [Django Rest Framework](https://www.django-rest-framework.org/).
 
 Strava's native activity search, especially on web, is exceedingly limited. By taking advantage of the
