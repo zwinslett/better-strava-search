@@ -19,6 +19,7 @@ abstract Solr's syntax away from the user.
 ## What's not done
 - A basic user interface for making queries without needing Solr syntax in the `q` param. 
 - A vector-based similarity score on activities.
+- Support for **non-running** activities.
 
 ## How to run this program 
 In order to run this program, you'll need: 
